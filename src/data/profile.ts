@@ -1,9 +1,14 @@
-export type ExperienceItem = {
-  company: string;
-  location: string;
+export type ExperienceRole = {
   title: string;
   dates: string;
   bullets: string[];
+  tech?: string[];
+};
+
+export type ExperienceGroup = {
+  company: string;
+  location: string;
+  roles: ExperienceRole[];
 };
 
 export type ProjectItem = {
@@ -22,60 +27,110 @@ export const profile = {
   links: {
     linkedin: "https://linkedin.com/in/kedar-hegde/",
     github: "https://github.com/kedarnhegde",
+    resume:
+      "https://drive.google.com/file/d/1ZCRdRWkF8GzGStVfZ_bckkefifZIirfK/view?usp=drive_link",
   },
   summary:
     "Computer Science graduate student at SDSU (Fall 2025) with 3 years of software development experience across India and Japan. Skilled in designing scalable web applications, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise spanning frontend frameworks, backend systems, and cloud databases.",
 
   skills: {
     languages: ["JavaScript", "TypeScript", "Python", "C++", "Ruby", "Go"],
-    frameworksTools: ["Vue.js/Nuxt", "React/Next", "GraphQL", "Apollo Client", "Node.js", "Rails"],
+    frameworksTools: [
+      "Vue.js/Nuxt",
+      "React/Next",
+      "GraphQL",
+      "Apollo Client",
+      "Node.js",
+      "Rails",
+    ],
     databases: ["MySQL", "PostgreSQL", "Firestore", "Amazon DynamoDB"],
     soft: ["Communication", "Teamwork", "Leadership", "Adaptability"],
     humanLanguages: ["English", "Japanese", "Kannada"],
   },
 
-  experience: <ExperienceItem[]>[
+  experience: <ExperienceGroup[]>[
     {
-      company: "ANDPAD INC.",
+      company: "ANDPAD Inc.",
       location: "Tokyo, Japan",
-      title: "Software Engineer II - i18n Team",
-      dates: "July 2024 - May 2025",
-      bullets: [
-        "Developed multilingual support features, ensuring seamless internationalization across platforms.",
-        "Implemented multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
-        "Integrated Nuxt-i18n for dynamic language switching, improving global user accessibility.",
-      ],
-    },
-    {
-      company: "ANDPAD INC.",
-      location: "Tokyo, Japan",
-      title: "Software Engineer I - ANDPAD CHAT Team",
-      dates: "October 2022 - June 2024",
-      bullets: [
-        "Designed and launched a reaction feature in Vue/Nuxt TS, boosting user engagement by nearly 50%.",
-        "Implemented blue-green deployment strategy, reducing downtime and risk in releases.",
-        "Integrated GraphQL with Apollo Client, improving data fetching and frontend responsiveness.",
+      roles: [
+        {
+          title: "Software Engineer II – i18n Team",
+          dates: "Jul 2024 – May 2025",
+          bullets: [
+            "Developed multilingual support features, ensuring seamless internationalization across platforms.",
+            "Implemented multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
+            "Integrated Nuxt-i18n for dynamic language switching, improving global user accessibility.",
+          ],
+          tech: [
+            "Ruby on Rails",
+            "TypeScript",
+            "Nuxt.js",
+            "Next.js",
+            "AWS Lambda",
+            "Amazon SQS",
+            "Tailwind CSS",
+          ],
+        },
+        {
+          title: "Software Engineer I – ANDPAD CHAT Team",
+          dates: "Oct 2022 – Jun 2024",
+          bullets: [
+            "Designed and launched a reaction feature in Vue/Nuxt TS, boosting user engagement by nearly 50%.",
+            "Implemented blue-green deployment strategy, reducing downtime and risk in releases.",
+            "Integrated GraphQL with Apollo Client, improving data fetching and frontend responsiveness.",
+          ],
+          tech: [
+            "Vue.js",
+            "Nuxt.js",
+            "TypeScript",
+            "GraphQL",
+            "Apollo Client",
+            "Pinia (migrated from Vuex)",
+          ],
+        },
       ],
     },
     {
       company: "NimbleWork (formerly Digite Infotech) Inc.",
       location: "Bangalore, India",
-      title: "Full Stack Intern - Kanban Team",
-      dates: "February 2022 - April 2022",
-      bullets: [
-        "Contributed to designing a Kanban board using React.js.",
-        "Built micro-frontends for multiple components, improving task management efficiency.",
-        "Collaborated in Agile sprints, delivering features on schedule using in-house Agile tools and Git.",
+      roles: [
+        {
+          title: "Full Stack Intern – Kanban Team",
+          dates: "Feb 2022 – Apr 2022",
+          bullets: [
+            "Contributed to designing a Kanban board using React.js.",
+            "Built micro-frontends for multiple components, improving task management efficiency.",
+            "Collaborated in Agile sprints, delivering features on schedule using in-house Agile tools and Git.",
+          ],
+          tech: [
+            "React.js",
+            "Micro-frontends",
+            "MUI (Material UI)",
+            "Git",
+            "Agile",
+          ],
+        },
       ],
     },
     {
       company: "Excel Energies",
       location: "Bangalore, India",
-      title: "Web Development Intern",
-      dates: "August 2020 - September 2020",
-      bullets: [
-        "Developed and deployed the company website using React.js and Firestore (NoSQL) on Netlify.",
-        "Enhanced the “Contact Us” form with Firebase, improving lead generation and raising company productivity by 25%.",
+      roles: [
+        {
+          title: "Web Development Intern",
+          dates: "Aug 2020 – Sep 2020",
+          bullets: [
+            "Developed and deployed the company website using React.js and Firestore (NoSQL) on Netlify.",
+            "Enhanced the “Contact Us” form with Firebase, improving lead generation and raising company productivity by 25%.",
+          ],
+          tech: [
+            "React.js",
+            "Firebase",
+            "Firestore",
+            "Netlify",
+            "MUI (Material UI)",
+          ],
+        },
       ],
     },
   ],
@@ -84,7 +139,7 @@ export const profile = {
     {
       name: "Tweeter",
       date: "January 2024",
-      tech: ["Ruby on Rails", "PostgreSQL"],
+      tech: ["Ruby on Rails", "SQL"],
       bullets: [
         "Developed a social media platform using Ruby on Rails with real-time interactions.",
         "Implemented secure user authentication and data management.",
