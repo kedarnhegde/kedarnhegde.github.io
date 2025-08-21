@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-5xl px-6 pt-28 pb-20 text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs backdrop-blur">
           <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-          Available for internships & full-time roles
+          Open to opportunities
         </span>
 
         <h1 className="mt-6 text-4xl sm:text-5xl font-bold tracking-tight text-neutral-100">

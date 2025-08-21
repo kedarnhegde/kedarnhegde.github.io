@@ -78,8 +78,16 @@ export default function HomePage() {
       <section id="contact" className="mb-24 scroll-mt-24">
         <SectionHeading>Contact</SectionHeading>
         <ul className="space-y-3 text-lg">
-          <li>
-            <span className="font-medium">Email:</span>{" "}
+          <li className="flex items-center gap-3">
+            {/* Email icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-neutral-400"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z" />
+            </svg>
             <a
               className="underline underline-offset-4 hover:text-emerald-400 transition-colors"
               href={`mailto:${profile.email}`}
@@ -87,8 +95,17 @@ export default function HomePage() {
               {profile.email}
             </a>
           </li>
-          <li>
-            <span className="font-medium">Phone:</span>{" "}
+
+          <li className="flex items-center gap-3">
+            {/* Phone icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-neutral-400"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M6.62 10.79a15.09 15.09 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1v3.59a1 1 0 0 1-1 1A17.77 17.77 0 0 1 3 6a1 1 0 0 1 1-1h3.6a1 1 0 0 1 1 1c0 1.22.2 2.42.57 3.56a1 1 0 0 1-.25 1.02l-2.3 2.21Z" />
+            </svg>
             <a
               className="underline underline-offset-4 hover:text-emerald-400 transition-colors"
               href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}
@@ -96,8 +113,17 @@ export default function HomePage() {
               {profile.phone}
             </a>
           </li>
-          <li>
-            <span className="font-medium">LinkedIn:</span>{" "}
+
+          <li className="flex items-center gap-3">
+            {/* LinkedIn icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-neutral-400"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.33V9h3.4v1.56h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.21 2.35 4.21 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.11 20.45H3.58V9h3.53v11.45z" />
+            </svg>
             <a
               className="underline underline-offset-4 hover:text-emerald-400 transition-colors"
               href={profile.links.linkedin}
@@ -109,10 +135,6 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-
-      <footer className="mb-8 text-sm text-neutral-500 dark:text-neutral-400">
-        © {new Date().getFullYear()} {profile.name}
-      </footer>
     </main>
   );
 }

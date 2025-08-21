@@ -33,7 +33,7 @@ export default function ExperienceCard({ group }: { group: ExperienceGroup }) {
 
             {/* Tech tags (optional) */}
             {role.tech && role.tech.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div className="mt-3 flex flex-wrap gap-2 [word-break:keep-all]">
                 {role.tech.map((t) => (
                   <span
                     key={t}
