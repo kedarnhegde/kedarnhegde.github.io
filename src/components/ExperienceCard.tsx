@@ -1,4 +1,3 @@
-// src/components/ExperienceCard.tsx
 import type { ExperienceGroup } from "@/data/profile";
 
 export default function ExperienceCard({ group }: { group: ExperienceGroup }) {

@@ -44,8 +44,6 @@ export const profile = {
       "Rails",
     ],
     databases: ["MySQL", "PostgreSQL", "Firestore", "Amazon DynamoDB"],
-    soft: ["Communication", "Teamwork", "Leadership", "Adaptability"],
-    humanLanguages: ["English", "Japanese", "Kannada"],
   },
 
   experience: <ExperienceGroup[]>[

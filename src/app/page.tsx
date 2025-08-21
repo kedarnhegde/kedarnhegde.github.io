@@ -1,8 +1,9 @@
-// src/app/page.tsx
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
 import ExperienceCard from "@/components/ExperienceCard";
+import SkillsCard from "@/components/SkillsCard";
+import AchievementsCard from "@/components/AchievementsCard";
 import { profile } from "@/data/profile";
 
 export default function HomePage() {
@@ -20,6 +21,20 @@ export default function HomePage() {
               <ExperienceCard key={idx} group={group} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="mb-16 scroll-mt-24">
+        <SectionHeading>Education</SectionHeading>
+        <div className="space-y-4">
+          {profile.education.map((e, i) => (
+            <div key={i} className="rounded-lg border border-neutral-800 p-4">
+              <h4 className="font-semibold text-neutral-100">{e.school}</h4>
+              <p className="text-neutral-200">{e.detail}</p>
+              <p className="text-neutral-400 text-sm">{e.extra}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -44,39 +59,18 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div>
-          <SectionHeading>Skills</SectionHeading>
-          <p className="mb-1">
-            <span className="font-medium">Languages:</span>{" "}
-            {profile.skills.languages.join(", ")}
-          </p>
-          <p className="mb-1">
-            <span className="font-medium">Frameworks &amp; Tools:</span>{" "}
-            {profile.skills.frameworksTools.join(", ")}
-          </p>
-          <p className="mb-1">
-            <span className="font-medium">Databases:</span>{" "}
-            {profile.skills.databases.join(", ")}
-          </p>
+        <div className="space-y-6">
+          {/* Skills */}
+          <section id="skills" className="mb-16 scroll-mt-24">
+            <SectionHeading>Skills</SectionHeading>
+            <SkillsCard />
+          </section>
 
-          <SectionHeading className="mt-8">Education</SectionHeading>
-          <ul className="list-disc ml-5 space-y-2">
-            {profile.education.map((e, i) => (
-              <li key={i}>
-                <span className="font-medium">{e.school}</span> — {e.detail} ·{" "}
-                <span className="text-neutral-600 dark:text-neutral-400">
-                  {e.extra}
-                </span>
-              </li>
-            ))}
-          </ul>
-
-          <SectionHeading className="mt-8">Achievements</SectionHeading>
-          <ul className="list-disc ml-5 space-y-2">
-            {profile.achievements.map((a, i) => (
-              <li key={i}>{a}</li>
-            ))}
-          </ul>
+          {/* Achievements */}
+          <section id="achievements" className="mb-16 scroll-mt-24">
+            <SectionHeading>Achievements</SectionHeading>
+            <AchievementsCard />
+          </section>
         </div>
       </section>
 

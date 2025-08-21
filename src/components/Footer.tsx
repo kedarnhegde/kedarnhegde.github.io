@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import { profile } from "@/data/profile";
 
 const telHref = `tel:${profile.phone.replace(/[^+\d]/g, "")}`;
