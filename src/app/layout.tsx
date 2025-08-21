@@ -4,6 +4,9 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://kedarnhegde.github.io"
+  ),
   title: "Kedar Hegde — Portfolio",
   description: "Portfolio of Kedar Hegde — Software Engineer",
 };
