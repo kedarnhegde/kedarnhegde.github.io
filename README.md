@@ -3,7 +3,7 @@
 This is my personal portfolio website built with **Next.js 14** and **Tailwind CSS**.  
 It showcases my **experience, projects, skills, and achievements** in software development.
 
-// 👉 [Live Site](TBA)
+👉 [Live Site](https://kedarnhegde.github.io/)
 
 ---
 
@@ -18,9 +18,10 @@ It showcases my **experience, projects, skills, and achievements** in software d
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-// TBA
+
+<img width="1462" height="798" alt="Screenshot 2025-08-21 at 13 27 35" src="https://github.com/user-attachments/assets/01ba6382-6630-4b78-8795-bfc74e7a9815" />
 
 ---
 
