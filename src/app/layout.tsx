@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
