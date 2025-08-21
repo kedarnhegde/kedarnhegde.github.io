@@ -69,7 +69,7 @@ export default function Nav() {
             </Link>
           </div>
 
-          <div className="mt-3 flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none">
+          <div className="mt-3 flex flex-wrap items-center gap-2 px-2 sm:px-0">
             {sections.map((s, i) => (
               <div key={s.id} className="flex items-center">
                 <a
