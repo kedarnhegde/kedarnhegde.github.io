@@ -40,23 +40,23 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           {/* Primary (filled, high contrast on dark) */}
           <Link
-            href="#projects"
+            href={profile.links.resume}
+            target="_blank"
             className="group inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-neutral-900"
           >
-            View Projects
+            Resume
             <svg
-              className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+              className="h-4 w-4"
               viewBox="0 0 20 20"
-              fill="currentColor"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               aria-hidden="true"
             >
-              <path
-                d="M5 10h8M10 5l5 5-5 5"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+              <path d="M10 4v8m0 0l-3-3m3 3l3-3" />
+              <path d="M4 14h12" />
             </svg>
           </Link>
 
@@ -88,12 +88,11 @@ export default function Hero() {
 
           {/* Optional: Resume link (drop your PDF in /public/resume.pdf) */}
           <a
-            href={profile.links.resume}
-            target="_blank"
+            href="#projects"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
           >
-            Resume
+            Projects
           </a>
 
           {/* Optional: Phone (click-to-call) */}
