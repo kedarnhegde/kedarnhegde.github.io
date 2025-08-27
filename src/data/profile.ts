@@ -145,7 +145,7 @@ export const profile = {
       repo: "https://github.com/kedarnhegde/tweeter",
     },
     {
-      name: "Weather Forecast",
+      name: "Havamana",
       date: "August 2021",
       tech: ["React.js", "OpenWeather API", "Netlify"],
       bullets: [
