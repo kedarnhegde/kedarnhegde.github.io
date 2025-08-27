@@ -55,9 +55,9 @@ export const profile = {
           title: "Software Engineer II – i18n Team",
           dates: "Jul 2024 – May 2025",
           bullets: [
-            "Developed multilingual support features, ensuring seamless internationalization across platforms.",
             "Implemented multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
             "Integrated Nuxt-i18n for dynamic language switching, improving global user accessibility.",
+            "Designed an event-driven file download system using Rails, Amazon SQS, and AWS Lambda, adding language context to messages to deliver localized files.",
           ],
           tech: [
             "Ruby on Rails",
