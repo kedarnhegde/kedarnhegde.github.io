@@ -52,12 +52,15 @@ export const profile = {
       location: "Tokyo, Japan",
       roles: [
         {
-          title: "Software Engineer II – i18n Team",
-          dates: "Jul 2024 – May 2025",
+          title: "Software Engineer II - i18n Team",
+          dates: "Jul 2024 - May 2025",
           bullets: [
-            "Implemented multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
+            "Implemented a multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
             "Leveraged Nuxt-i18n to enable dynamic language switching, improving accessibility for global users.",
-            "Architected an event-driven file download system with Rails, Amazon SQS, and AWS Lambda, adding language context for localized files.",
+            "Architected an event-driven file download system using Rails, Amazon SQS, and AWS Lambda, adding language context for localized files.",
+            "Collaborated with product managers and Japanese/English design teams to ensure terminology consistency across markets.",
+            "Enhanced CI/CD pipelines to run i18n-specific test suites, preventing regressions when adding new languages.",
+            "Documented i18n practices and onboarded new engineers to follow localization guidelines.",
           ],
           tech: [
             "Ruby on Rails",
@@ -70,12 +73,15 @@ export const profile = {
           ],
         },
         {
-          title: "Software Engineer I – ANDPAD CHAT Team",
-          dates: "Oct 2022 – Jun 2024",
+          title: "Software Engineer I - ANDPAD CHAT Team",
+          dates: "Oct 2022 - Jun 2024",
           bullets: [
             "Designed and launched a reaction feature in Vue/Nuxt TS, boosting user engagement by nearly 50%.",
             "Devised blue-green deployment strategy, reducing downtime and risk in releases.",
             "Integrated GraphQL with Apollo Client, improving data fetching and frontend responsiveness.",
+            "Migrated state management from Vuex to Pinia, enabling stronger TypeScript support and maintainability.",
+            "Increased unit test coverage from ~55% to 95% using Vitest and TypeScript, strengthening release confidence.",
+            "Migrated legacy codebase from Vue 2/Nuxt 2 to Vue 3/Nuxt 3, modernizing architecture and improving developer productivity.",
           ],
           tech: [
             "Vue.js",
@@ -93,20 +99,18 @@ export const profile = {
       location: "Bangalore, India",
       roles: [
         {
-          title: "Full Stack Intern – Kanban Team",
-          dates: "Feb 2022 – Apr 2022",
+          title: "Full Stack Intern - Kanban Team",
+          dates: "Feb 2022 - Apr 2022",
           bullets: [
-            "Assisted to designing a Kanban board using React.js.",
-            "Built micro-frontends for multiple components, improving task management efficiency.",
-            "Collaborated in Agile sprints, delivering features on schedule using in-house Agile tools and Git.",
+            "Built a Kanban board in React.js, delivering core task views and interactions.",
+            "Applied Redux for state management, streamlining data flow and reducing update complexity.",
+            "Integrated REST APIs to fetch/update task data in real time.",
+            "Developed micro-frontends for modular features, enabling independent iteration and deployment.",
+            "Styled responsive UI with Bootstrap for consistent layouts across devices.",
+            "Collaborated in Agile sprints, delivering features on schedule using in-house tools and Git.",
+            "Participated in stand-ups, sprint planning, and retrospectives to align with team goals.",
           ],
-          tech: [
-            "React.js",
-            "Micro-frontends",
-            "MUI (Material UI)",
-            "Git",
-            "Agile",
-          ],
+          tech: ["React.js", "Micro-frontends", "Bootstrap", "Git", "Agile"],
         },
       ],
     },
@@ -116,10 +120,13 @@ export const profile = {
       roles: [
         {
           title: "Web Development Intern",
-          dates: "Aug 2020 – Sep 2020",
+          dates: "Aug 2020 - Sep 2020",
           bullets: [
             "Developed and deployed the company website using React.js and Firestore (NoSQL) on Netlify.",
             "Enhanced the “Contact Us” form with Firebase, improving lead generation and raising company productivity by 25%.",
+            "Worked directly with the operations team to gather requirements for product pages and customer contact flows.",
+            "Integrated Firestore rules to protect data and ensure form submissions were secure.",
+            "Optimized deployment pipeline with Netlify for faster iterations on content updates.",
           ],
           tech: [
             "React.js",
@@ -127,6 +134,28 @@ export const profile = {
             "Firestore",
             "Netlify",
             "MUI (Material UI)",
+          ],
+        },
+      ],
+    },
+    {
+      company: "Naaniz Seller Services Pvt. Ltd.",
+      location: "Bangalore, India",
+      roles: [
+        {
+          title: "Front End Web Development Intern",
+          dates: "Jun 2020 - Jul 2020",
+          bullets: [
+            "Built websites for restaurant and jewelry clients, tailoring responsive layouts with React.js and MUI.",
+            "Integrated front-end components with back-end REST APIs in Node.js, ensuring smooth data flow and consistent user experience.",
+            "Collaborated with clients in requirements meetings to translate business needs into technical solutions.",
+          ],
+          tech: [
+            "React.js",
+            "MUI (Material UI)",
+            "Redux",
+            "Node.js",
+            "REST API",
           ],
         },
       ],
