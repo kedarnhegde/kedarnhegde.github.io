@@ -9,16 +9,16 @@ export default function ExperienceCard({ group }: { group: ExperienceGroup }) {
       <div className="rounded-xl border border-neutral-800 p-5">
         {/* Company header */}
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-          <h3 className="font-semibold">
+          <h3 className="font-bold">
             {group.company} · {group.location}
           </h3>
         </div>
 
         {/* Roles under company */}
         {group.roles.map((role, i) => (
-          <div key={i} className={i === 0 ? "mt-3" : "mt-4"}>
+          <div key={i} className={i === 0 ? "mt-4" : "mt-5"}>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
-              <h4 className="font-medium">{role.title}</h4>
+              <h4 className="font-semibold">{role.title}</h4>
               <div className="text-sm text-neutral-400">{role.dates}</div>
             </div>
 
