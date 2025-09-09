@@ -56,8 +56,8 @@ export const profile = {
           dates: "Jul 2024 – May 2025",
           bullets: [
             "Implemented multilingual switch in Ruby on Rails with phased rollout using darklaunch.",
-            "Integrated Nuxt-i18n for dynamic language switching, improving global user accessibility.",
-            "Designed an event-driven file download system using Rails, Amazon SQS, and AWS Lambda, adding language context to messages to deliver localized files.",
+            "Leveraged Nuxt-i18n to enable dynamic language switching, improving accessibility for global users.",
+            "Architected an event-driven file download system with Rails, Amazon SQS, and AWS Lambda, adding language context for localized files.",
           ],
           tech: [
             "Ruby on Rails",
@@ -74,7 +74,7 @@ export const profile = {
           dates: "Oct 2022 – Jun 2024",
           bullets: [
             "Designed and launched a reaction feature in Vue/Nuxt TS, boosting user engagement by nearly 50%.",
-            "Implemented blue-green deployment strategy, reducing downtime and risk in releases.",
+            "Devised blue-green deployment strategy, reducing downtime and risk in releases.",
             "Integrated GraphQL with Apollo Client, improving data fetching and frontend responsiveness.",
           ],
           tech: [
@@ -96,7 +96,7 @@ export const profile = {
           title: "Full Stack Intern – Kanban Team",
           dates: "Feb 2022 – Apr 2022",
           bullets: [
-            "Contributed to designing a Kanban board using React.js.",
+            "Assisted to designing a Kanban board using React.js.",
             "Built micro-frontends for multiple components, improving task management efficiency.",
             "Collaborated in Agile sprints, delivering features on schedule using in-house Agile tools and Git.",
           ],
@@ -139,7 +139,7 @@ export const profile = {
       date: "January 2024",
       tech: ["Ruby on Rails", "SQL"],
       bullets: [
-        "Developed a social media platform using Ruby on Rails with real-time interactions.",
+        "Built a social media platform using Ruby on Rails with real-time interactions.",
         "Implemented secure user authentication and data management.",
       ],
       repo: "https://github.com/kedarnhegde/tweeter",
