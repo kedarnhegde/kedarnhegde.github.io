@@ -4,6 +4,7 @@ const labels: Record<keyof typeof profile.skills, string> = {
   languages: "Programming Languages",
   frameworksTools: "Frameworks & Tools",
   databases: "Databases",
+  cloud: "Cloud & Tools",
 };
 
 export default function SkillsCard() {

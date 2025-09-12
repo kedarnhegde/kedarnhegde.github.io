@@ -45,7 +45,7 @@ export default function HomePage() {
       >
         <div>
           <SectionHeading>Projects</SectionHeading>
-          <div className="space-y-6">
+          <div className="space-y-12">
             {profile.projects.map((p, i) => (
               <ProjectCard
                 key={i}
@@ -61,7 +61,7 @@ export default function HomePage() {
 
         <div className="space-y-6">
           {/* Skills */}
-          <section id="skills" className="mb-16 scroll-mt-24">
+          <section id="skills" className="mb-8 scroll-mt-24">
             <SectionHeading>Skills</SectionHeading>
             <SkillsCard />
           </section>

@@ -31,10 +31,21 @@ export const profile = {
       "https://drive.google.com/file/d/1f7dtXx36W5lU92ND3mPa4eP9u7kGUpg7/view?usp=sharing",
   },
   summary:
-    "Computer Science graduate student at SDSU (Fall 2025) with 3 years of software development experience across India and Japan. Skilled in designing scalable web applications, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise spanning frontend frameworks, backend systems, and cloud databases.",
+    "CS graduate student at SDSU (Fall 2025) with 3 years of development experience across India and Japan. Skilled in scalable web apps, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise in frontend frameworks, backend systems, and cloud databases. Currently seeking software engineering internships starting Summer 2026.",
 
   skills: {
-    languages: ["JavaScript", "TypeScript", "Python", "C++", "Ruby", "Go"],
+    languages: [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Python",
+      "C++",
+      "Ruby",
+      "Java",
+      "Go",
+    ],
     frameworksTools: [
       "Vue.js/Nuxt",
       "React/Next",
@@ -44,6 +55,7 @@ export const profile = {
       "Rails",
     ],
     databases: ["MySQL", "PostgreSQL", "Firestore", "Amazon DynamoDB"],
+    cloud: ["AWS Lambda", "Amazon SQS", "Docker", "GitHub Actions", "CI/CD"],
   },
 
   experience: <ExperienceGroup[]>[

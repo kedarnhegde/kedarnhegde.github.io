@@ -65,7 +65,7 @@ export default function Hero() {
             href={`mailto:${profile.email}`}
             className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
           >
-            Email Me
+            Email
           </a>
 
           <a
@@ -100,7 +100,7 @@ export default function Hero() {
             href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}
             className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
           >
-            Call Me
+            Call
           </a>
         </div>
       </div>
