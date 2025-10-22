@@ -28,7 +28,7 @@ export const profile = {
     linkedin: "https://linkedin.com/in/kedar-hegde/",
     github: "https://github.com/kedarnhegde",
     resume:
-      "https://drive.google.com/file/d/1UYrD33KmvZAD3AxiqLCkrVwPFSWZjwBn/view?usp=sharing",
+      "https://drive.google.com/file/d/1T6OqP31ll77oVbkQfvzQ-8ujeROTI9TK/view?usp=sharing",
   },
   summary:
     "CS graduate student at SDSU (Fall 2025) with 3 years of development experience across India and Japan. Skilled in scalable web apps, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise in frontend frameworks, backend systems, and cloud databases. Currently seeking software engineering internships starting Summer 2026.",
