@@ -71,9 +71,47 @@ export const profile = {
       "Datadog",
       "Git",
     ],
+    mldata: [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "TensorFlow",
+      "Data Preprocessing & Evaluation",
+    ],
+    infra: [
+      "Kubernetes",
+      "Docker",
+      "Apache Kafka",
+      "gRPC",
+      "Jenkins",
+      "CircleCI",
+    ],
   },
 
   experience: <ExperienceGroup[]>[
+    {
+      company: "SDSU Privacy-Preserving Generative AI Lab",
+      location: "San Diego, CA",
+      roles: [
+        {
+          title: "Research Assistant",
+          dates: "Sep 2025 - Present",
+          bullets: [
+            "Contributing to PSyGen, a privacy-preserving generative framework for tabular data using Augmented Lagrangian optimization, improving the privacy–utility trade-off by at least 20% on benchmark datasets.",
+            "Implementing RealTabFormer for tabular data synthesis and extend its objective to jointly optimize data quality (Q) and privacy (P) metrics across 3+ evaluation datasets.",
+          ],
+          tech: [
+            "Python",
+            "NumPy",
+            "Pandas",
+            "RealTabFormer",
+            "Augmented Lagrangian Method (ALM)",
+            "Matplotlib",
+            "Jupyter Notebook",
+          ],
+        },
+      ],
+    },
     {
       company: "ANDPAD Inc.",
       location: "Tokyo, Japan",
@@ -219,7 +257,7 @@ export const profile = {
     {
       school: "Dayananda Sagar College of Engineering",
       detail: "Bachelor of Engineering in Information Science & Engineering",
-      extra: "June 2022 · Bangalore, India · CGPA: 8.99/10",
+      extra: "June 2022 · Bangalore, India · GPA: 3.59",
     },
   ],
 

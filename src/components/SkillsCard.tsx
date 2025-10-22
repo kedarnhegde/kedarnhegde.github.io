@@ -5,6 +5,8 @@ const labels: Record<keyof typeof profile.skills, string> = {
   frameworksTools: "Frameworks & Tools",
   databases: "Databases",
   cloud: "Cloud & Tools",
+  mldata: "ML / Data",
+  infra: "Infrastructure & DevOps:",
 };
 
 export default function SkillsCard() {
