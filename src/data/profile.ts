@@ -28,7 +28,7 @@ export const profile = {
     linkedin: "https://linkedin.com/in/kedar-hegde/",
     github: "https://github.com/kedarnhegde",
     resume:
-      "https://drive.google.com/file/d/1T6OqP31ll77oVbkQfvzQ-8ujeROTI9TK/view?usp=sharing",
+      "https://drive.google.com/file/d/1BeFUBvwQ9jPISqdMEYGUbu64RX00SVEc/view?usp=sharing",
   },
   summary:
     "CS graduate student at SDSU (Fall 2025) with 3 years of development experience across India and Japan. Skilled in scalable web apps, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise in frontend frameworks, backend systems, and cloud databases. Currently seeking software engineering internships starting Summer 2026.",
@@ -41,18 +41,27 @@ export const profile = {
       "CSS",
       "SCSS",
       "Python",
+      "SQL",
       "C++",
       "Ruby",
       "Java",
       "Go",
+      "C",
+      "Dart",
+      "Shell Scripting",
     ],
     frameworksTools: [
       "Vue.js/Nuxt",
       "React/Next",
       "GraphQL",
       "Apollo Client",
+      "FastAPI",
       "Node.js",
+      "Express.js",
       "Rails",
+      "Flutter",
+      "Redux",
+      "Pinia",
     ],
     databases: [
       "MySQL",
@@ -64,19 +73,13 @@ export const profile = {
     cloud: [
       "AWS Lambda",
       "Amazon SQS",
-      "Docker",
-      "GitHub Actions",
-      "CI/CD",
-      "Sentry",
-      "Datadog",
+      "AWS S3",
+      "Terraform",
       "Git",
-    ],
-    mldata: [
-      "NumPy",
-      "Pandas",
-      "PyTorch",
-      "TensorFlow",
-      "Data Preprocessing & Evaluation",
+      "GitHub Actions / CI/CD",
+      "REST APIs",
+      "Postman",
+      "Swagger",
     ],
     infra: [
       "Kubernetes",
@@ -85,6 +88,18 @@ export const profile = {
       "gRPC",
       "Jenkins",
       "CircleCI",
+      "Sentry",
+      "Datadog",
+      "Helm",
+    ],
+    mldata: [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "Matplotlib",
+      "RealTabFormer",
     ],
   },
 
@@ -228,9 +243,34 @@ export const profile = {
 
   projects: <ProjectItem[]>[
     {
+      name: "reLink",
+      date: "November 2025",
+      tech: [
+        "NextJS",
+        "FastAPI",
+        "MySQL",
+        "JWT+bcrypt",
+        "ZXing",
+        "OpenCV DeepFace",
+      ],
+      bullets: [
+        "Engineered a digital identity system during the 2025 Big Data Hackathon, empowering unsheltered individuals to access housing, healthcare, and jobs through verified credentials, featuring ZXing-based QR verification and DeepFace-powered face detection.",
+      ],
+      repo: "https://github.com/kedarnhegde/reLink",
+    },
+    {
+      name: "myNexus",
+      date: "November 2025",
+      tech: ["NextJS", "FastAPI", "MySQL", "JWT+bcrypt"],
+      bullets: [
+        "Developed during the Innovate4SDSU Hackathon, myNexus connects SDSU students through Course Compass for professor and course insights, and Peer Connect for intelligent study-partner matching using tagged interests and secure, scalable full-stack integration with optimized API architecture.",
+      ],
+      repo: "https://github.com/kedarnhegde/myNexus",
+    },
+    {
       name: "Tweeter",
       date: "January 2024",
-      tech: ["Ruby on Rails", "SQL"],
+      tech: ["Ruby on Rails", "MySQL"],
       bullets: [
         "Built a social media platform using Ruby on Rails with real-time interactions.",
         "Implemented secure user authentication and data management.",
