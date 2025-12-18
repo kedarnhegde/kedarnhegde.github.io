@@ -244,6 +244,16 @@ export const profile = {
 
   projects: <ProjectItem[]>[
     {
+      name: "MQSim",
+      date: "December 2025",
+      tech: ["Python", "FastAPI", "ReactJS", "Vite", "Canvas", "AsyncIO"],
+      bullets: [
+        "Built an end-to-end IoT/MQTT network simulator with WiFi/BLE PHY models, CSMA/CA MAC, distance-vector routing, and MQTT pub/sub supporting QoS0/1, DUP detection, retries, keep-alive, mobility-based disconnect/reconnect, and broker failover, powered by an asynchronous FastAPI simulation engine.",
+        "Developed an interactive React + TypeScript (Vite) interface with Canvas-based packet animations, real-time metrics (latency, PDR, energy), topic heatmaps, and automated experiments (duty-cycle and BLE vs WiFi), and deployed the full system using Vercel + Render with secure CORS and environment-configurable REST APIs.",
+      ],
+      repo: "https://github.com/kedarnhegde/network-simulator",
+    },
+    {
       name: "reLink",
       date: "November 2025",
       tech: [
