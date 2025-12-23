@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Kedar Hegde — Portfolio",
@@ -41,11 +42,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-background text-foreground">
-        <Nav />
-        {children}
-        <Footer />
-        <ScrollToTop />
+      <body className="bg-neutral-950 text-foreground antialiased">
+        <SmoothScroll>
+          <Nav />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </SmoothScroll>
       </body>
     </html>
   );

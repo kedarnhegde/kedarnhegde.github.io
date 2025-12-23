@@ -22,12 +22,11 @@ export default function ScrollToTop() {
     <button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className="fixed bottom-6 right-6 z-50 rounded-full border border-neutral-800 bg-neutral-900 p-3 text-neutral-200 shadow-lg transition hover:bg-emerald-500 hover:text-white"
+      className="fixed bottom-6 right-6 z-50 rounded-full bg-white p-3 text-purple-600 shadow-2xl transition-all hover:scale-110 hover:shadow-purple-300"
     >
-      {/* Up arrow SVG */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="h-6 w-6"
         viewBox="0 0 20 20"
         fill="currentColor"
       >

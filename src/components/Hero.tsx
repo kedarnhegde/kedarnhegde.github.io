@@ -1,109 +1,108 @@
 "use client";
 import { profile } from "@/data/profile";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="about" className="relative overflow-hidden" aria-label="Intro">
-      {/* Background: gradient mesh + subtle grid + noise (dark-optimized) */}
-      <div className="pointer-events-none absolute inset-0">
-        {/* gradient mesh */}
-        <div className="absolute -inset-20 bg-[radial-gradient(60%_40%_at_20%_20%,rgba(59,130,246,0.35),transparent_60%),radial-gradient(40%_60%_at_80%_20%,rgba(168,85,247,0.30),transparent_60%),radial-gradient(50%_50%_at_50%_80%,rgba(16,185,129,0.25),transparent_60%)]" />
-        {/* animated blobs */}
-        <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-blue-500/25 blur-3xl animate-float" />
-        <div className="absolute right-0 top-24 h-64 w-64 rounded-full bg-purple-500/20 blur-3xl animate-float-slow" />
-        <div className="absolute left-1/2 bottom-0 h-80 w-80 -translate-x-1/2 rounded-full bg-emerald-400/15 blur-3xl animate-float-fast" />
-        {/* subtle grid (dark) */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:48px_48px]" />
-        {/* noise */}
-        <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22 viewBox=%220 0 160 160%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/></filter><rect width=%22160%22 height=%22160%22 filter=%22url(%23n)%22 opacity=%220.4%22/></svg>')]" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
+      {/* Animated background shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          className="absolute -top-40 -right-40 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+          animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.3, 0.5] }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
       </div>
 
-      {/* Content */}
-      <div className="relative mx-auto max-w-5xl px-6 pt-28 pb-20 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs backdrop-blur">
-          <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-          Open to opportunities
-        </span>
-
-        <h1 className="mt-6 text-4xl sm:text-5xl font-bold tracking-tight text-neutral-100">
-          {profile.name}
-        </h1>
-        <p className="mt-2 text-lg text-neutral-300">
-          {profile.role} · San Diego, CA · English & Japanese (JLPT N2)
-        </p>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-neutral-200">
-          {profile.summary}
-        </p>
-
-        {/* CTAs */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          {/* Primary (filled, high contrast on dark) */}
-          <Link
-            href={profile.links.resume}
-            target="_blank"
-            className="group inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-neutral-900"
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 py-2 mb-8"
+            whileHover={{ scale: 1.05 }}
           >
-            Resume
-            <svg
-              className="h-4 w-4"
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span className="text-white text-sm font-medium">Available for Summer 2026 Internships</span>
+          </motion.div>
+
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
+            {profile.name}
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-white/90 font-light mb-4">
+            {profile.role}
+          </p>
+          
+          <p className="text-base md:text-lg text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+            {profile.summary}
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <motion.a
+              href={profile.links.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-white/50 transition-all"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <path d="M10 4v8m0 0l-3-3m3 3l3-3" />
-              <path d="M4 14h12" />
-            </svg>
-          </Link>
+              Download Resume
+            </motion.a>
+            <motion.a
+              href={`mailto:${profile.email}`}
+              className="bg-white/10 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get in Touch
+            </motion.a>
+          </div>
 
-          {/* Outline variants (dark-only) */}
-          <a
-            href={`mailto:${profile.email}`}
-            className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
-          >
-            Email
-          </a>
-
-          <a
-            href={profile.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
-          >
-            GitHub
-          </a>
-
-          <a
-            href={profile.links.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
-          >
-            LinkedIn
-          </a>
-
-          {/* Optional: Resume link (drop your PDF in /public/resume.pdf) */}
-          <a
-            href="#projects"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
-          >
-            Projects
-          </a>
-
-          {/* Optional: Phone (click-to-call) */}
-          <a
-            href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}
-            className="inline-flex items-center gap-2 rounded-md border border-neutral-700 px-4 py-2 text-neutral-100 hover:bg-neutral-800"
-          >
-            Call
-          </a>
-        </div>
+          <div className="flex items-center justify-center gap-6 mt-12">
+            <motion.a
+              href={profile.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="text-white/70 hover:text-white transition-colors"
+              whileHover={{ scale: 1.2 }}
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </motion.a>
+            <motion.a
+              href={profile.links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="text-white/70 hover:text-white transition-colors"
+              whileHover={{ scale: 1.2 }}
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.33V9h3.4v1.56h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.21 2.35 4.21 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.11 20.45H3.58V9h3.53v11.45z"/>
+              </svg>
+            </motion.a>
+          </div>
+        </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </motion.div>
     </section>
   );
 }
