@@ -42,7 +42,7 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-2">Projects</h2>
-              <p className="text-base text-gray-600 mb-10">Things I've built</p>
+              <p className="text-base text-gray-600 mb-10">Things I&apos;ve built</p>
             </motion.div>
             <div className="grid md:grid-cols-2 gap-8">
               {profile.projects.map((p, i) => (
@@ -87,7 +87,7 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-2">Let's Connect</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-2">Let&apos;s Connect</h2>
               <p className="text-base text-gray-600 mb-10">Get in touch with me</p>
             </motion.div>
             <div className="grid md:grid-cols-2 gap-6">
