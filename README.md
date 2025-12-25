@@ -20,10 +20,7 @@ It showcases my **experience, projects, skills, and achievements** in software d
 
 ## 📸 Screenshot
 
-
-<img width="1465" height="797" alt="Screenshot 2025-09-09 at 11 03 33" src="https://github.com/user-attachments/assets/a9f404fd-586d-4609-945d-17053f93684c" />
-
-
+<img width="1470" height="803" alt="Screenshot 2025-12-24 at 22 39 25" src="https://github.com/user-attachments/assets/34fae131-fc33-4ebd-8009-15259a6e082f" />
 
 
 ---
