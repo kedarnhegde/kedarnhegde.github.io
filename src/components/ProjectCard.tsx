@@ -45,7 +45,7 @@ export default function ProjectCard({ name, date, tech = [], bullets = [], repo 
         <ul className="space-y-2 mb-4">
           {bullets.map((b, i) => (
             <li key={i} className="flex items-start gap-3 text-gray-700 leading-relaxed text-sm">
-              <span className="text-purple-500 mt-1.5 text-xl">•</span>
+              <span className="text-purple-500 text-xl leading-none flex-shrink-0">•</span>
               <span>{b}</span>
             </li>
           ))}

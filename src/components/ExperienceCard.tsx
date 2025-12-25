@@ -33,7 +33,7 @@ export default function ExperienceCard({ group, index }: { group: ExperienceGrou
           <ul className="space-y-2 mb-4">
             {role.bullets.map((bullet, j) => (
               <li key={j} className="flex items-start gap-3 text-gray-700 leading-relaxed text-sm">
-                <span className="text-purple-500 mt-1.5 text-xl">•</span>
+                <span className="text-purple-500 text-xl leading-none flex-shrink-0">•</span>
                 <span>{bullet}</span>
               </li>
             ))}

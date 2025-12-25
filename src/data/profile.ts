@@ -113,8 +113,7 @@ export const profile = {
           title: "Research Assistant",
           dates: "Sep 2025 - Present",
           bullets: [
-            "Contributing to PSyGen, a privacy-preserving generative framework for tabular data using Augmented Lagrangian optimization, improving the privacy–utility trade-off by at least 20% on benchmark datasets.",
-            "Implementing RealTabFormer for tabular data synthesis and extend its objective to jointly optimize data quality (Q) and privacy (P) metrics across 3+ evaluation datasets.",
+            "Engineered the PSyGen framework for privacy-preserving tabular data generation using an Augmented Lagrangian–based optimization algorithm, improving the privacy–utility trade-off from 31% to 51% privacy with only a marginal drop in data quality (98% to 95%), enabling scalable, containerized model evaluation.",
           ],
           tech: [
             "Python",
@@ -136,12 +135,9 @@ export const profile = {
           title: "Software Engineer II - i18n Team",
           dates: "Jul 2024 - May 2025",
           bullets: [
-            "As the company expanded into new markets, I implemented a multilingual switch in Ruby on Rails with a phased rollout using darklaunch, and integrated Nuxt-i18n to enable dynamic language switching, which significantly improved accessibility for a growing global user base.",
-            "I solved an issue where all downloaded files defaulted to Japanese by architecting an event-driven download pipeline using Rails, Amazon SQS, and AWS Lambda, ensuring that users consistently received files in their selected language.",
-            "I collaborated with product managers to review and align terminology across more than 200 screens, which reduced cross-market inconsistencies and improved translation quality.",
-            "I enhanced CI/CD pipelines to run i18n-specific test suites and coverage checks, preventing regressions whenever new languages were introduced.",
-            "To scale team knowledge, I authored i18n onboarding guides and best-practice documentation that enabled new engineers to ramp up more quickly and follow consistent localization standards.",
-            "Monitored the multilingual pipeline with Datadog, tracking performance metrics and ensuring reliable localized file delivery.",
+            "Delivered multilingual switching (Rails + Nuxt-i18n) with English & Vietnamese support for 1500+ users, increasing company revenue by approx. 8%, leveraging modularized microservices for scalability and localized content delivery.",
+            "Built an asynchronous download pipeline (Rails, SQS, AWS Lambda) handling 10K+ requests/day with auto-scaling, load balancing, and Datadog-based monitoring for performance and error tracking, reducing operational costs by 15%.",
+            "Automated i18n validation in CI/CD pipeline to detect translation drift pre-release, reducing localization bugs by 30% and improving deployment reliability.",
           ],
           tech: [
             "Ruby on Rails",
@@ -158,12 +154,10 @@ export const profile = {
           title: "Software Engineer I - ANDPAD CHAT Team",
           dates: "Oct 2022 - Jun 2024",
           bullets: [
-            "I designed and shipped a reactions feature in Vue/Nuxt with GraphQL + Apollo Client, which was quickly adopted by over 70% of active users and boosted overall engagement by nearly 50%.",
-            "To reduce release risk, I introduced a blue-green deployment strategy that minimized downtime during rollouts which gave us the confidence to deploy more frequently.",
-            "I integrated GraphQL with Apollo Client to replace inefficient REST calls, which reduced over-fetching, lowered API payloads by around 40%, and improved frontend responsiveness by ~25%.",
-            "To improve product reliability, I increased unit test coverage from ~55% to over 95% using Vitest and TypeScript, which reduced hotfixes by more than half and significantly strengthened release confidence.",
-            "I modernized the codebase by migrating from Vue 2/Nuxt 2 to Vue 3/Nuxt 3, which streamlined the developer workflow, shortened build times, and improved overall productivity across the team.",
-            "Instrumented new chat features with Sentry, enabling proactive error tracking and faster issue resolution in production.",
+            "Integrated GraphQL with Apollo Client to cut over-fetching by 40% and boost frontend load speed by 25%.",
+            "Launched reactions feature in Vue/Nuxt, boosting user engagement by 50% and instrumenting error tracking with Sentry.",
+            "Migrated Vue 2/Nuxt 2 to Vue 3/Nuxt 3 and Vuex to Pinia, raising TypeScript coverage by 35% and enhancing code maintainability and runtime stability.",
+            "Improved reliability by implementing blue-green deployment, expanding unit testing and AAA-structured test coverage (55% to 95%), and leveraging Sentry/Datadog for incident monitoring and RCA; cut MTTR by 40% and improved deployment stability.",
           ],
           tech: [
             "Vue.js",
@@ -185,11 +179,9 @@ export const profile = {
           title: "Full Stack Intern - Kanban Team",
           dates: "Feb 2022 - Apr 2022",
           bullets: [
-            "I built a Kanban board in React.js that delivered the core task views and interactions needed for enterprise clients, and ensured the features were delivered on schedule to meet customer deadlines.",
-            "To improve consistency and reduce bugs, I introduced Redux for state management and integrated REST APIs that kept task data synchronized in real time across multiple views.",
-            "I developed micro-frontends for modular features, which allowed separate teams to build and deploy independently and accelerated overall delivery by reducing integration bottlenecks.",
-            "I styled the application with responsive Bootstrap layouts, ensuring that the task board worked seamlessly across desktops, tablets, and mobile devices.",
-            "I participated actively in Agile ceremonies including daily stand-ups, sprint planning, and retrospectives, aligning closely with cross-functional teams to deliver features predictably each sprint.",
+            "Delivered React Kanban board for 500+ users, boosting productivity by 40% with task views and interactions.",
+            "Integrated Redux state management and REST APIs for efficient data flow and improved API response latency.",
+            "Built micro-frontends enabling modular feature deployment and reducing integration time by 25% improving scalability.",
           ],
           tech: ["React.js", "Micro-frontends", "Bootstrap", "Git", "Agile"],
         },

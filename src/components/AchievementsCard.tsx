@@ -23,7 +23,7 @@ export default function AchievementsCard() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, delay: i * 0.1 }}
           >
-            <span className="text-xl text-purple-500">✓</span>
+            <span className="text-xl text-purple-500 leading-none flex-shrink-0">✓</span>
             <span className="text-gray-700 leading-relaxed text-sm">{a}</span>
           </motion.li>
         ))}
