@@ -22,7 +22,7 @@ export default function ScrollToTop() {
     <button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className="fixed bottom-6 right-6 z-50 rounded-full bg-white p-3 text-purple-600 shadow-2xl transition-all hover:scale-110 hover:shadow-purple-300"
+      className="fixed bottom-6 right-6 z-50 rounded-full bg-white p-3 text-purple-600 shadow-2xl transition-all hover:scale-110 hover:shadow-purple-300 cursor-pointer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
