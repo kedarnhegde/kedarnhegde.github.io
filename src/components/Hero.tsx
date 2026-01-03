@@ -30,17 +30,19 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
           >
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span className="text-white text-sm font-medium">Available for Summer 2026 Internships</span>
+            <span className="text-white text-sm font-medium">
+              Available for Summer 2026 Internships
+            </span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
             {profile.name}
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-white/90 font-light mb-4">
             {profile.role}
           </p>
-          
+
           <p className="text-base md:text-lg text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             {profile.summary}
           </p>
@@ -54,7 +56,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              Download Resume
+              View Resume
             </motion.a>
             <motion.a
               href={`mailto:${profile.email}`}
@@ -75,7 +77,7 @@ export default function Hero() {
               whileHover={{ scale: 1.2 }}
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
               </svg>
             </motion.a>
             <motion.a
@@ -86,7 +88,7 @@ export default function Hero() {
               whileHover={{ scale: 1.2 }}
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.33V9h3.4v1.56h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.21 2.35 4.21 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.11 20.45H3.58V9h3.53v11.45z"/>
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.33V9h3.4v1.56h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.21 2.35 4.21 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.11 20.45H3.58V9h3.53v11.45z" />
               </svg>
             </motion.a>
           </div>
@@ -99,8 +101,18 @@ export default function Hero() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        <svg
+          className="w-6 h-6 text-white/50"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
         </svg>
       </motion.div>
     </section>
