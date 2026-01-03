@@ -28,7 +28,7 @@ export const profile = {
     linkedin: "https://linkedin.com/in/kedar-hegde/",
     github: "https://github.com/kedarnhegde",
     resume:
-      "https://drive.google.com/file/d/14wUqP6AZsUoIdenhRCFSeudcInKVMuKU/view?usp=sharing",
+      "https://drive.google.com/file/d/1wRkJ-WA9lmT2X-5grtoUEjcCAkpJbcSL/view?usp=sharing",
   },
   summary:
     "CS graduate student at SDSU (Fall 2025) with 3 years of development experience across India and Japan. Skilled in scalable web apps, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise in frontend frameworks, backend systems, and cloud databases. Currently seeking software engineering internships starting Summer 2026.",
@@ -273,7 +273,7 @@ export const profile = {
     {
       name: "Tweeter",
       date: "January 2024",
-      tech: ["Ruby on Rails", "MySQL"],
+      tech: ["Ruby on Rails", "MySQL", "ActionMailer", "jQuery-Rails"],
       bullets: [
         "Built a social media platform using Ruby on Rails with real-time interactions.",
         "Implemented secure user authentication and data management.",
@@ -295,7 +295,7 @@ export const profile = {
     {
       school: "San Diego State University",
       detail: "Master of Science in Computer Science",
-      extra: "Expected May 2027 · San Diego, CA · GPA: To be earned",
+      extra: "May 2027 · San Diego, CA · GPA: 3.79",
     },
     {
       school: "Dayananda Sagar College of Engineering",

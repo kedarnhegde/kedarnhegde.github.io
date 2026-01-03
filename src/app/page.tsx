@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import SkillsCard from "@/components/SkillsCard";
+import EducationCard from "@/components/EducationCard";
 import AchievementsCard from "@/components/AchievementsCard";
 import { profile } from "@/data/profile";
 import { motion } from "framer-motion";
@@ -31,6 +32,20 @@ export default function HomePage() {
                 <ExperienceCard key={idx} group={group} index={idx} />
               ))}
             </div>
+          </section>
+
+          {/* Education */}
+          <section id="education">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-2">Education</h2>
+              <p className="text-base text-gray-600 mb-10">Academic background</p>
+            </motion.div>
+            <EducationCard />
           </section>
 
           {/* Projects */}
