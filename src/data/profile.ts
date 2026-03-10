@@ -135,9 +135,9 @@ export const profile = {
           title: "Software Engineer II - i18n Team",
           dates: "Jul 2024 - May 2025",
           bullets: [
-            "Delivered multilingual switching (Rails + Nuxt-i18n) with English & Vietnamese support for 1500+ users, increasing company revenue by approx. 8%, leveraging modularized microservices for scalability and localized content delivery.",
+            "Delivered multilingual switching (Rails + Nuxt-i18n) with Japanese, English and Vietnamese support for 1500+ users, increasing company revenue by approx. 8%, leveraging modularized microservices for scalability and localized content delivery.",
             "Built an asynchronous download pipeline (Rails, SQS, AWS Lambda) handling 10K+ requests/day with auto-scaling, load balancing, and Datadog-based monitoring for performance and error tracking, reducing operational costs by 15%.",
-            "Automated i18n validation in CI/CD pipeline to detect translation drift pre-release, reducing localization bugs by 30% and improving deployment reliability.",
+            "Automated i18n validation in CI/CD to catch pre-release translation drift, cutting localization bugs by 30% before production releases.",
           ],
           tech: [
             "Ruby on Rails",
@@ -154,9 +154,9 @@ export const profile = {
           title: "Software Engineer I - ANDPAD CHAT Team",
           dates: "Oct 2022 - Jun 2024",
           bullets: [
-            "Integrated GraphQL with Apollo Client to cut over-fetching by 40% and boost frontend load speed by 25%.",
-            "Launched reactions feature in Vue/Nuxt, boosting user engagement by 50% and instrumenting error tracking with Sentry.",
-            "Migrated Vue 2/Nuxt 2 to Vue 3/Nuxt 3 and Vuex to Pinia, raising TypeScript coverage by 35% and enhancing code maintainability and runtime stability.",
+            "Integrated GraphQL with Apollo Client to cut over-fetching by 40% and boost frontend load speed by 25% across core user flows.",
+            "Launched reactions feature in Vue/Nuxt, boosting user engagement by 50% and instrumenting error tracking with Sentry in production.",
+            "Migrated Vue 2/Nuxt 2 to Vue 3/Nuxt 3 and Vuex to Pinia, increasing TypeScript coverage by 35% across the frontend codebase.",
             "Improved reliability by implementing blue-green deployment, expanding unit testing and AAA-structured test coverage (55% to 95%), and leveraging Sentry/Datadog for incident monitoring and RCA; cut MTTR by 40% and improved deployment stability.",
           ],
           tech: [
@@ -180,8 +180,8 @@ export const profile = {
           dates: "Feb 2022 - Apr 2022",
           bullets: [
             "Delivered React Kanban board for 500+ users, boosting productivity by 40% with task views and interactions.",
-            "Integrated Redux state management and REST APIs for efficient data flow and improved API response latency.",
-            "Built micro-frontends enabling modular feature deployment and reducing integration time by 25% improving scalability.",
+            "Integrated Redux-based state management with REST APIs to streamline client-server data flow, reduce API response latency, and improve frontend performance under concurrent usage.",
+            "Built a micro-frontend architecture enabling modular deployments, reducing integration time by 25% across modules.",
           ],
           tech: ["React.js", "Micro-frontends", "Bootstrap", "Git", "Agile"],
         },
@@ -195,10 +195,8 @@ export const profile = {
           title: "Web Development Intern",
           dates: "Aug 2020 - Sep 2020",
           bullets: [
-            "I built and deployed the company's website using React.js and Firestore on Netlify, creating a professional online presence that became the primary customer touchpoint.",
-            "I re-engineered the “Contact Us” form with Firebase to capture leads more effectively, which increased lead submissions by around 25% and improved team productivity.",
-            "I added Firestore security rules to safeguard customer data, preventing unauthorized access and improving overall trust with clients.",
-            "I also optimized the deployment pipeline with Netlify, reducing update turnaround time from days to hours and enabling faster marketing and product page iterations.",
+            "Developed and deployed React + Firestore website on Netlify with secure serverless API submissions and CI/CD automation.",
+            "Enhanced “Contact Us” workflow using Firebase Auth and validation rules, increasing lead conversion by 25%.",
           ],
           tech: [
             "React.js",
@@ -218,9 +216,9 @@ export const profile = {
           title: "Front End Web Development Intern",
           dates: "Jun 2020 - Jul 2020",
           bullets: [
-            "I developed websites for restaurant and jewelry clients, building responsive layouts with React.js and Material UI that delivered a clean and modern customer experience.",
-            "I integrated the frontend with REST APIs in Node.js, ensuring seamless communication between the UI and backend services.",
-            "I worked directly with clients in requirements meetings to translate their business needs into technical solutions, which helped shape features and fostered long-term client satisfaction.",
+            "Developed responsive React.js + Material UI websites for restaurant and jewelry clients, delivering modern UI/UX experiences aligned with business branding and customer engagement goals.",
+            "Integrated React frontend with Node.js REST APIs, enabling seamless client-server communication and reliable data exchange across application workflows.",
+            "Collaborated directly with clients in requirements meetings to translate business needs into scalable technical solutions, shaping feature design and improving long-term client satisfaction.",
           ],
           tech: [
             "React.js",
