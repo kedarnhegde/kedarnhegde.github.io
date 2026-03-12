@@ -6,8 +6,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
-  title: "Kedar Hegde — Portfolio",
-  description: "Portfolio of Kedar Hegde — Software Engineer",
+  title: "Kedar Hegde - Portfolio",
+  description: "Portfolio of Kedar Hegde - Software Engineer",
   metadataBase: new URL("https://kedarnhegde.github.io"),
   openGraph: {
     title: "Kedar Hegde — Software Engineer",
