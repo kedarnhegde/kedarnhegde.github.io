@@ -293,7 +293,7 @@ export const profile = {
     {
       school: "San Diego State University",
       detail: "Master of Science in Computer Science",
-      extra: "May 2027 · San Diego, CA · GPA: 3.79",
+      extra: "May 2027 · San Diego, CA · GPA: 3.88",
     },
     {
       school: "Dayananda Sagar College of Engineering",
