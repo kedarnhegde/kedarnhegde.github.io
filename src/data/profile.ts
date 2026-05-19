@@ -31,8 +31,7 @@ export const profile = {
       "https://drive.google.com/file/d/1wRkJ-WA9lmT2X-5grtoUEjcCAkpJbcSL/view?usp=sharing",
   },
   summary:
-    "CS graduate student at SDSU (Fall 2025) with 3 years of development experience across India and Japan. Skilled in scalable web apps, system internationalization, and cross-cultural collaboration. Fluent in English and Japanese, with expertise in frontend frameworks, backend systems, and cloud databases. Currently seeking software engineering internships starting Summer 2026.",
-
+    "CS graduate student at SDSU (Spring 2027) with 3 years of software engineering experience across India and Japan, building scalable full-stack applications, developer tooling, and distributed systems. Experienced in frontend architecture, backend services, cloud infrastructure, and observability, with a strong focus on performance, reliability, and system scalability. Fluent in English and Japanese, currently seeking Software Engineering opportunities starting May 2027.",
   skills: {
     languages: [
       "JavaScript",
