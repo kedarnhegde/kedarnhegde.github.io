@@ -111,7 +111,7 @@ export const profile = {
       roles: [
         {
           title: "Research Assistant",
-          dates: "Sep 2025 - Present",
+          dates: "Apr 2026 - Present",
           bullets: [
             "Engineered the PSyGen framework for privacy-preserving tabular data generation using an Augmented Lagrangian–based optimization algorithm, improving the privacy–utility trade-off from 31% to 51% privacy with only a marginal drop in data quality (98% to 95%), enabling scalable, containerized model evaluation.",
           ],
@@ -233,6 +233,16 @@ export const profile = {
   ],
 
   projects: <ProjectItem[]>[
+    {
+      name: "PRISM",
+      date: "May 2026",
+      tech: ["TypeScript", "VS Code API", "Ollama"],
+      bullets: [
+        "Built and open-sourced PRISM, a local-first VS Code extension with 100+ installs that analyzes pull requests for secrets/API keys, missing test coverage, risky config changes, branch safety issues, and oversized PRs using git-diff analysis and static checks.",
+        "Implemented AI-assisted PR summaries, risk analysis, and smart pre-push checklists using Ollama, TypeScript, and the VS Code Extension API; published publicly on the VS Code Marketplace with active developer feedback.",
+      ],
+      repo: "https://github.com/kedarnhegde/prism",
+    },
     {
       name: "MQSim",
       date: "December 2025",
