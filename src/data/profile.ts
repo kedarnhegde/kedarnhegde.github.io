@@ -253,6 +253,22 @@ export const profile = {
       repo: "https://github.com/kedarnhegde/network-simulator",
     },
     {
+      name: "Lexi AI",
+      date: "December 2025",
+      tech: [
+        "Python",
+        "Jupyter Notebook",
+        "Hugging Face",
+        "T5",
+        "BART",
+        "Logistic Regression",
+      ],
+      bullets: [
+        "Built an AI prototype for NDA analysis with summarization, risk detection, jargon explanation, and clause comparison using Hugging Face models including T5/BART and a trained Logistic Regression classifier.",
+      ],
+      repo: "https://github.com/kedarnhegde/CS549-lab",
+    },
+    {
       name: "reLink",
       date: "November 2025",
       tech: [
@@ -288,6 +304,15 @@ export const profile = {
       repo: "https://github.com/kedarnhegde/tweeter",
     },
     {
+      name: "Basic Blockchain",
+      date: "August 2021",
+      tech: ["JavaScript", "Node.js", "crypto-js", "Elliptic"],
+      bullets: [
+        "Implemented a basic blockchain in JavaScript with SHA-256 hashing, proof-of-work mining, signed transactions, wallet balances, mining rewards, and chain validation.",
+      ],
+      repo: "https://github.com/kedarnhegde/basic-blockchain",
+    },
+    {
       name: "Havamana",
       date: "August 2021",
       tech: ["React.js", "OpenWeather API", "Netlify"],
@@ -295,6 +320,34 @@ export const profile = {
         "Developed a React.js weather app using OpenWeather API and deployed it on Netlify for seamless hosting.",
       ],
       repo: "https://github.com/kedarnhegde/weather-app",
+    },
+
+    {
+      name: "Vehicle Counting and Classification",
+      date: "August 2021",
+      tech: ["Python", "OpenCV", "NumPy", "Computer Vision"],
+      bullets: [
+        "Developed a computer vision system to detect, track, count, and classify vehicles from video streams using OpenCV background subtraction, contour detection, object tracking, and direction-based counting.",
+      ],
+      repo: "https://github.com/kedarnhegde/vehicle-project",
+    },
+    {
+      name: "Movie Recommender",
+      date: "August 2021",
+      tech: ["Python", "APIs", "JSON", "Requests"],
+      bullets: [
+        "Built a movie recommendation script that fetches related titles from TasteDive, enriches results with OMDb ratings, and ranks recommendations by Rotten Tomatoes score.",
+      ],
+      repo: "https://github.com/kedarnhegde/movie-recommender",
+    },
+    {
+      name: "URL Shortener",
+      date: "August 2021",
+      tech: ["Python", "Tkinter", "pyshorteners", "pyperclip"],
+      bullets: [
+        "Built a desktop URL shortener with a Tkinter GUI, TinyURL generation, and one-click clipboard copy functionality.",
+      ],
+      repo: "https://github.com/kedarnhegde/url-shortener",
     },
   ],
 
