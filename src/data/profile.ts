@@ -28,7 +28,7 @@ export const profile = {
     linkedin: "https://linkedin.com/in/kedar-hegde/",
     github: "https://github.com/kedarnhegde",
     resume:
-      "https://drive.google.com/file/d/1wRkJ-WA9lmT2X-5grtoUEjcCAkpJbcSL/view?usp=sharing",
+      "https://drive.google.com/file/d/1LDJBriWgx8_XnMcNAf6NVFCYicJCEtw9/view?usp=sharing",
   },
   summary:
     "CS graduate student at SDSU (Spring 2027) with 3 years of software engineering experience across India and Japan, building scalable full-stack applications, developer tooling, and distributed systems. Experienced in frontend architecture, backend services, cloud infrastructure, and observability, with a strong focus on performance, reliability, and system scalability. Fluent in English and Japanese, currently seeking Software Engineering opportunities starting May 2027.",
